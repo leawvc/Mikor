@@ -1,7 +1,7 @@
 package com.shop.mikor.service;
 
 import com.shop.mikor.domain.posts.Posts;
-import com.shop.mikor.domain.posts.PostsRepository;
+import com.shop.mikor.repository.posts.PostsRepository;
 import com.shop.mikor.web.dto.PostsResponseDto;
 import com.shop.mikor.web.dto.PostsSaveRequestDto;
 import com.shop.mikor.web.dto.PostsUpdateRequestDto;
