@@ -1,13 +1,23 @@
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/Mikor
-    username: root
-    password: 1234
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
-    properties:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/stock_example
+    username: root
+    password: 1234
+    hikari:
+      maximum-pool-size: 40
+
+# JPA 쿼리가 어떻게 나가는지
+logging:
+  level:
+    org:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE

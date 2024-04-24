@@ -1,4 +1,4 @@
-package com.shop.mikor.service;
+package com.shop.mikor.service.post;
 
 import com.shop.mikor.domain.posts.Posts;
 import com.shop.mikor.repository.posts.PostsRepository;
